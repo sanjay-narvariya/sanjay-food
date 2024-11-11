@@ -1,0 +1,107 @@
+<style>
+     body {
+          margin: 0%;
+     }
+
+     .maincontainer {
+          background: #d9c7c7;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          font-family: 'Poppins';
+     }
+
+     .box {
+          background: pink;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          padding: 20px;
+     }
+
+     .navbarstyle {
+          width: 100%;
+          height: 50px;
+          background: #5352ed;
+     }
+
+     .logostyle {
+          width: 70px;
+          height: 45px;
+          margin: 5px;
+          padding-left: 5px;
+     }
+
+     .leftBox {
+          width: 170px;
+          height: 400px;
+          background: #a4b0be;
+          margin: 20px;
+          padding: 10px;
+          border-radius: 20px;
+     }
+</style>
+<html>
+
+<head>
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body class="body">
+     <div class="maincontainer">
+          <div class="navbarstyle">
+               <div><img src="/images/logo1.png" class="logostyle"></div>
+          </div>
+          <div style="display: flex;height:100%">
+               <div class="leftBox">
+                    <div style="display: flex; justify-content: center; flex-direction: column;">
+                         <img src="/images/<%=data.picture %>"
+                              style="align-self: center; width: 100px; height: 100px; border-radius: 50px;">
+                         <div
+                              style="color: #fff; font-weight: 500; letter-spacing: 1px; font-size: 12px; align-self: center;">
+                              <%=data.adminname %>
+                         </div>
+                         <div
+                              style="color: #fff; font-weight: 500; letter-spacing: 1px; font-size: 10px; align-self: center;">
+                              <%=data.emailid %>
+                         </div>
+                         <div
+                              style="color: #fff; font-weight: 500; letter-spacing: 1px; font-size: 11px; align-self: center;">
+                              +91 <%=data.mobileno %>
+                         </div>
+                         <div
+                              style="margin-top: 20px; color: #fff; font-weight: bold;  font-size: 12px; align-self: center;">
+                              <a href="/food/display_all_food" target="mw"
+                                   style="text-decoration: none; color: #fff;">Food List</a>
+                         </div>
+
+                         <div
+                              style="margin-top: 20px; color: #fff; font-weight: bold;  font-size: 12px; align-self: center;">
+                              <a href="/food/food_interface" target="mw" style="text-decoration: none; color: #fff;">Add
+                                   Food</a>
+                         </div>
+                         <div
+                              style="margin-top: 20px; color: #fff; font-weight: bold;  font-size: 12px; align-self: center;">
+                              <a href="/food/display_all_food" target="mw"
+                                   style="text-decoration: none; color: #fff;">Update Food</a>
+                         </div>
+                         <div
+                              style="margin-top: 20px; color: #fff; font-weight: bold;  font-size: 12px; align-self: center;">
+                              <a href="/admin/admin_logout"
+                              style="text-decoration: none; color: #fff;">Log Out</a>
+                         </div>
+                    </div>
+               </div>
+
+               <div>
+                    <iframe width="1000" height="100%" frameborder="0" name="mw"></iframe>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

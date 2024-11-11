@@ -1,0 +1,55 @@
+body{margin: 0;}
+.maincontainer{
+   background: #fff;
+     width: 95%;
+     display: flex;
+     justify-content: start;
+     padding-left: 10px;
+     padding-top: 20px;
+     
+     font-family: 'Poppins';
+}
+
+.box{
+    background-image: url("/images/haldi1.jpg");
+    background-size: 100% 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.login{
+  background: burlywood;
+  height: auto;
+  margin-left: 100px;
+  border: 5px solid rgb(127, 106, 172);
+
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headingstyle{
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+}
+
+.btncenter{
+  display: flex;
+  justify-content: center;
+}
+
+.btnsize{
+  margin-top: 5px;
+  width: 80%;
+}
+
+.addpic{width:40px;
+       height:40px;
+       border-radius: 10px; }

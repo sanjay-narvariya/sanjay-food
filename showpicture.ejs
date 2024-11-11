@@ -1,0 +1,13 @@
+<html>
+ <center>
+   <form action="/food/edit_picture" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="foodid" value="<%=data.foodid %>"/><br><br>
+        <h2><%=data.foodname %></h2><br><br>
+        <img src="/images/<%=data.foodpicture %>" width="200px" height="200px" /><br><br>
+        <b>Select New Picture</b><br><br>
+        <input type="hidden" name="oldfoodpicture" value="<%=data.foodpicture %>"/>
+        <input type="file" required name="foodpicture" accept="image/*" /><br><br>
+        <input type="submit" />
+    </form>
+</center>        
+</html>
